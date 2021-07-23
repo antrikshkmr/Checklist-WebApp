@@ -1,0 +1,69 @@
+body,
+html,
+.App,
+#root,
+.outerLogin {
+  width: 100%;
+  height: 100%;
+}
+
+.outerLogin {
+  background: #004d40;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.innerLogin {
+  width: 31%;
+  max-width: 480px;
+  min-width: 350px;
+  margin: auto;
+  padding: 50px;
+}
+.innerLogin label {
+  color: #004d40;
+}
+.outerLogin .form-control:focus {
+  border-color: #004d40;
+  box-shadow: none;
+}
+.appHeader {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+  line-height: 1;
+}
+.outerLogin h3 {
+  color: #004d40;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+.innerLogin button {
+  background-color: #004d40;
+  color: white;
+  border-radius: 3;
+  padding: 7;
+  font-size: 10;
+}
+.innerLogin button:hover {
+  background-color: #004d40;
+  color: white;
+}
+
+.errorLabel {
+  color: #e53935;
+  font-size: 15px;
+}
+
+#signup {
+  font-size: 18px;
+  color: #004d40;
+}
+.checklistIcon {
+  margin-right: 10px;
+}

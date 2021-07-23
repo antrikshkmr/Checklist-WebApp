@@ -1,0 +1,27 @@
+.toolbar {
+  background-color: #004d40;
+  position: absolute;
+  width: 100%;
+}
+.title {
+  flex-grow: 1;
+}
+.rootdiv {
+  flex-grow: 1;
+  width: 100%;
+}
+.logoutBtn {
+  color: white;
+  margin-top: 2px;
+  font-size: 15px;
+}
+.logoutBtn:hover {
+  color: white;
+}
+
+.nameDisplay {
+  margin-right: 20px;
+}
+.checklistIcon {
+  margin-right: 10px;
+}

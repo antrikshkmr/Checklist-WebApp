@@ -1,0 +1,56 @@
+body,
+html,
+.App,
+#root,
+.outerReg {
+  width: 100%;
+  height: 100%;
+}
+
+.outerReg {
+  background: #004d40;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.innerReg {
+  width: 31%;
+  max-width: 480px;
+  min-width: 350px;
+  margin: auto;
+  padding: 50px;
+}
+
+.outerReg .form-control:focus {
+  border-color: #004d40;
+  box-shadow: none;
+}
+
+.outerReg h3 {
+  color: #004d40;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+.innerReg button {
+  background-color: #004d40;
+  color: white;
+  border-radius: 3;
+  padding: 7;
+  font-size: 10;
+}
+.innerReg button:hover {
+  background-color: #004d40;
+  color: white;
+}
+.errorLabel {
+  color: #e53935;
+  font-size: 15px;
+}
+.outerReg a,
+a:hover {
+  color: #004d40;
+}
