@@ -1,0 +1,32 @@
+body,
+html,
+.App,
+#root,
+.outerPNF {
+  width: 100%;
+  height: 100%;
+}
+
+.outerPNF {
+  background: #004d40;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.innerPNF {
+  color: white;
+  width: 31%;
+
+  margin: auto;
+  padding: 50px;
+}
+.innerPNF h3 {
+  margin-top: 20px;
+}
+.innerPNF a,
+a:hover,
+a:focus {
+  color: white !important;
+}

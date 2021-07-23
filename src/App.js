@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
+import ErrorPage from "./pages/Error";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/error" component={ErrorPage} />
         <ProtectedRoute exact path="/" component={Home} />
         <Route path="/pagenotfound" component={PageNotFound} />
         <Route>
