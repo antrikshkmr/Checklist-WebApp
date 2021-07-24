@@ -13,6 +13,7 @@ This project is built using these technologies.
 - React.js
 - Node.js
 - CSS
+- Bootstrap
 
 ## Features
 
@@ -72,3 +73,12 @@ Clone this repository. You will need `Node.js` and `Git` installed globally on y
 
 Open the project folder and navigate to `/src/`. You will find all the subdirectories with relevant files.<br/>
 Each file has inline comments for easy understanding of the code.<br/>
+
+## Sources
+
+- <a href="https://material-ui.com" target="_blank">material-uI</a> : React components for faster and simpler web development.
+- <a href="https://www.npmjs.com/package/axios" target="_blank">axios</a> : Promise based HTTP client for the browser and node.js
+- <a href="https://www.npmjs.com/package/env-cmd" target="_blank">env-cmd</a> : A simple node program for executing commands using an environment from an env file.
+- <a href="https://www.npmjs.com/package/react-beautiful-dnd" target="_blank">react-beautiful-dnd</a> : Beautiful and accessible drag and drop for lists with React.
+- <a href="https://www.npmjs.com/package/react-beautiful-dnd" target="_blank">react-beautiful-dnd</a> : Beautiful and accessible drag and drop for lists with React.
+- <a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a> : An implementation of JSON Web Tokens for React.js and Node.js.
