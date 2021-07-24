@@ -62,7 +62,7 @@ Clone this repository. You will need `Node.js` and `Git` installed globally on y
 
 3.  Run `npm start` command in your terminal/cmd.
 
-    This would run the app in the development mode.
+    This would run the app in development mode.
     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
     The page will reload if you make edits.
 
