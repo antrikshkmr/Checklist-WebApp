@@ -6,7 +6,7 @@
 
 ## About the project
 
-Sample checklist webapp to manage your todo list of items which connects to a Node.js API server. API server code can be found here <a href="https://github.com/antrikshkmr/checklistToolBackend" target="_blank">checklistToolBackend</a> <br/>
+Sample checklist webapp to manage your to-do list of items which connects to a Node.js API server. API server code can be found here <a href="https://github.com/antrikshkmr/checklistToolBackend" target="_blank">checklistToolBackend</a>. <br/>
 
 This project is built using these technologies.
 
