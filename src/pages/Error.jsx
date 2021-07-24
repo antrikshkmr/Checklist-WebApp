@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import "../css/errorpage.css";
 import WarningIcon from "@material-ui/icons/Warning";
 
+// ====================================================== //
+// =============== This is the Error Page =============== //
+// ====================================================== //
+
 class Error extends Component {
+  //* This page will open when frontend is not able to connect to backend server due to some reason
   render() {
     return (
       <React.Fragment>

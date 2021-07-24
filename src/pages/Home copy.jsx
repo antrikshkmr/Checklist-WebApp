@@ -117,7 +117,7 @@ class Home extends Component {
     //* For handling draggable todo list items
     const handleOnDragEnd = result => {
       // If condition to disable drag and drop functionality for the first item in the list .i.e, add new item input field
-      if (result.source.index !== 0 && result.destination.index !== 0) {
+      if (result.source.index !== 0) {
         if (!result.destination) return;
 
         // Getting todo list items from state and storing it in a constant
@@ -293,7 +293,7 @@ class Home extends Component {
       // Parsing index of type sting to int
       let itemIndex = parseInt(index);
 
-      // Storing the item to be moved in a temporary variable
+      // Storing the item to be moved in a temporary variabled
       let taskToBeMoved = todoList[itemIndex];
 
       // Creating variable to pass in the body of the API request to backend
@@ -390,14 +390,14 @@ class Home extends Component {
       }
     };
     return (
-      <div className="mainDiv">
+      <div className="main">
         {/* Navbar component */}
         <Navbar
           syncingData={this.state.syncingData}
           username={this.state.username}
           name={this.state.firstName + " " + this.state.lastName}
         />
-        <div className="bgHome"></div>
+        <div className="bg"></div>
         <div className="outer">
           <div className="container">
             <h4 className="mainlistHeader">Items</h4>

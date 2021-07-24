@@ -5,7 +5,12 @@ import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Close";
 import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
 import AddIcon from "@material-ui/icons/Add";
+import Fade from "@material-ui/core/Fade";
 import "../css/home.css";
+
+// ====================================================== //
+// ==== This is the component for Todo List Item Card === //
+// ====================================================== //
 
 class TodoTaskCard extends Component {
   render() {
@@ -30,48 +35,50 @@ class TodoTaskCard extends Component {
             </Grid>
           </div>
         ) : (
-          <div className="taskCard">
-            <Grid container spacing={3}>
-              <Grid item xs={10} sm={10} md={11} lg={11} className="gridFlex">
-                <div className="dragIconDiv">
-                  <DragIndicatorIcon className="dragIndicatorIcon showOnHover" />
-                </div>
-                <Checkbox
-                  style={{ color: "#004d40" }}
-                  id={"cb_" + this.props._id}
-                  onChange={event =>
-                    this.props.handleCheckBox(event, this.props.index)
-                  }
-                  color="primary"
-                />
-                <input
-                  type="text"
-                  id={"tf_" + this.props._id}
-                  className="taskEditField"
-                  value={this.props.taskName}
-                  onChange={event =>
-                    this.props.handleTaskEdit(event, this.props.index)
-                  }
-                />
+          <Fade in={true} timeout={300}>
+            <div className="taskCard">
+              <Grid container spacing={3}>
+                <Grid item xs={10} sm={10} md={11} lg={11} className="gridFlex">
+                  <div className="dragIconDiv">
+                    <DragIndicatorIcon className="dragIndicatorIcon showOnHover" />
+                  </div>
+                  <Checkbox
+                    style={{ color: "#82142f" }}
+                    id={"cb_" + this.props._id}
+                    onChange={event =>
+                      this.props.handleCheckBox(event, this.props.index)
+                    }
+                    color="primary"
+                  />
+                  <input
+                    type="text"
+                    id={"tf_" + this.props._id}
+                    className="taskEditField"
+                    value={this.props.taskName}
+                    onChange={event =>
+                      this.props.handleTaskEdit(event, this.props.index)
+                    }
+                  />
+                </Grid>
+                <Grid item xs={2} sm={2} md={1} lg={1} className="text-end">
+                  <IconButton
+                    id={"del_" + this.props._id}
+                    className="deleteIcon"
+                    onClick={event =>
+                      this.props.handleTaskDelete(
+                        event,
+                        this.props.index,
+                        1,
+                        "del_" + this.props._id
+                      )
+                    }
+                  >
+                    <DeleteIcon />
+                  </IconButton>
+                </Grid>
               </Grid>
-              <Grid item xs={2} sm={2} md={1} lg={1} className="text-end">
-                <IconButton
-                  id={"del_" + this.props._id}
-                  className="deleteIcon"
-                  onClick={event =>
-                    this.props.handleTaskDelete(
-                      event,
-                      this.props.index,
-                      1,
-                      "del_" + this.props._id
-                    )
-                  }
-                >
-                  <DeleteIcon />
-                </IconButton>
-              </Grid>
-            </Grid>
-          </div>
+            </div>
+          </Fade>
         )}
       </div>
     );

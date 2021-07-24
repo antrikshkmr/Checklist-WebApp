@@ -9,6 +9,11 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import { withCookies } from "react-cookie";
 import { withStyles } from "@material-ui/core/styles";
 import "../css/navbar.css";
+
+// ====================================================== //
+// ====== This is the top Navigation Bar component ====== //
+// ====================================================== //
+
 const CustomLinearProgressBar = withStyles(theme => ({
   root: {
     height: 3
@@ -17,13 +22,17 @@ const CustomLinearProgressBar = withStyles(theme => ({
     backgroundColor: "white"
   },
   bar: {
-    backgroundColor: "#004d40"
+    backgroundColor: "#82142f"
   }
 }))(LinearProgress);
 class Navbar extends Component {
   render() {
+    //* To handle logout
     const handleLogout = () => {
+      // Delete the cookie with token
       this.props.cookies.remove("auth", { path: "/" });
+
+      // Redirect user to Login Page
       window.location = "/login";
     };
     return (
@@ -49,7 +58,7 @@ class Navbar extends Component {
               className="title"
               onClick={e => (window.location = "/")}
             >
-              Smart Checklist
+              Checklist Tool
             </Typography>
             {window.screen.width >= 675 && (
               <div className="nameDisplay">

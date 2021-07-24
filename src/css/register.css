@@ -6,13 +6,26 @@ html,
   width: 100%;
   height: 100%;
 }
+.bgReg{
+  background-image: url("../assets/Background.jpg");
 
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .outerReg {
-  background: #004d40;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+
+  position: absolute;
+  top: 0%;
+
+  z-index: 2;
 }
 
 .innerReg {
@@ -24,26 +37,26 @@ html,
 }
 
 .outerReg .form-control:focus {
-  border-color: #004d40;
+  border-color: #82142f;
   box-shadow: none;
 }
 
 .outerReg h3 {
-  color: #004d40;
+  color: #82142f;
   text-align: center;
   margin: 0;
   line-height: 1;
   padding-bottom: 20px;
 }
 .innerReg button {
-  background-color: #004d40;
+  background-color: #82142f;
   color: white;
   border-radius: 3;
   padding: 7;
   font-size: 10;
 }
 .innerReg button:hover {
-  background-color: #004d40;
+  background-color: #82142f;
   color: white;
 }
 .errorLabel {
@@ -52,5 +65,10 @@ html,
 }
 .outerReg a,
 a:hover {
-  color: #004d40;
+  color: #82142f;
+}
+#loginPageLink {
+  font-size: 16px;
+  color: #82142f;
+  background-color: transparent;
 }

@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+<h2 align="center">
+  Sample CheckList WebApp<br/>
+</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+Sample checklist webapp to manage your todo list of items which connects to a Node.js API server. API server code can be found here <a href="https://github.com/antrikshkmr/checklistToolBackend" target="_blank">checklistToolBackend</a> <br/>
 
-### `npm start`
+This project is built using these technologies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React.js
+- Node.js
+- CSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+> **User Login and Registration**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> **JWT based user authentication**
 
-### `npm run build`
+> **User Specific Checklist**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> **Minimalistic UI**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+  <img alt="screenshot1" src="./src/assets/readme/screenshot1.png" />
+    <img alt="screenshot2" src="./src/assets/readme/screenshot2.png" />
+      <img alt="screenshot3" src="./src/assets/readme/screenshot3.png" />
+</div>
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation and Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.  Create environment variable file(s) with the following variable(s):
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ### **File 1**:
 
-## Learn More
+         .env
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    #### Variable:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    > REACT_APP_BASE_API_URL = "`YOUR_NODEJS_SERVER_URL`/api"
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ### **File 2** (If you have two different environments):
 
-### Analyzing the Bundle Size
+        .env.development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    #### Variables:
 
-### Making a Progressive Web App
+    >REACT_APP_STAGE= "dev"<br/>
+    >REACT_APP_BASE_API_URL = "`YOUR_NODEJS_SERVER_URL`/api"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2.  Open the terminal/cmd in the project root directory and run `npm install` command.
 
-### Advanced Configuration
+3.  Run `npm start` command in your terminal/cmd.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    This would run the app in the development mode.
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    The page will reload if you make edits.
 
-### Deployment
+    > For running the app in development mode using the environment variables stored in _.env.development_ file you can run `npm start dev` in your terminal/cmd.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage Instructions
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open the project folder and navigate to `/src/`. You will find all the subdirectories with relevant files.<br/>
+Each file has inline comments for easy understanding of the code.<br/>

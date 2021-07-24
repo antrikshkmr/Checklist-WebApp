@@ -7,12 +7,25 @@ html,
   height: 100%;
 }
 
+.bgLogin {
+  background-image: url("../assets/Background.jpg");
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .outerLogin {
-  background: #004d40;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+
+  position: absolute;
+  top: 0%;
+
+  z-index: 2;
 }
 
 .innerLogin {
@@ -20,38 +33,37 @@ html,
   max-width: 480px;
   min-width: 350px;
   margin: auto;
-  padding: 50px;
 }
 .innerLogin label {
-  color: #004d40;
+  color: #82142f;
 }
 .outerLogin .form-control:focus {
-  border-color: #004d40;
+  border-color: #82142f;
   box-shadow: none;
 }
 .appHeader {
-  color: white;
+  color: #82142f;
   text-align: center;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   line-height: 1;
 }
 .outerLogin h3 {
-  color: #004d40;
+  color: #82142f;
   text-align: center;
   margin: 0;
   line-height: 1;
   padding-bottom: 20px;
 }
 .innerLogin button {
-  background-color: #004d40;
+  background-color: #82142f;
   color: white;
   border-radius: 3;
   padding: 7;
-  font-size: 10;
+  font-size: 20px;
 }
 .innerLogin button:hover {
-  background-color: #004d40;
+  background-color: #82142f;
   color: white;
 }
 
@@ -62,8 +74,12 @@ html,
 
 #signup {
   font-size: 18px;
-  color: #004d40;
+  color: #82142f;
+  background-color: transparent;
 }
 .checklistIcon {
   margin-right: 10px;
+}
+.paper {
+  padding: 50px;
 }

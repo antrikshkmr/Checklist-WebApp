@@ -8,7 +8,7 @@ html,
 }
 
 .outerErr {
-  background: #004d40;
+  background: #82142f;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,8 +20,13 @@ html,
   width: 31%;
 
   margin: auto;
-  padding: 440px;
+  padding: 40px;
 }
 .innerErr h3 {
   margin-top: 20px;
+}
+.innerErr a,
+a:hover,
+a:focus {
+  color: white !important;
 }
